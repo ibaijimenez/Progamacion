@@ -1,0 +1,40 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/tema3.iml\" filepath=\"$PROJECT_DIR$/tema3.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision e4522929084d43165af3036f0063be93b7f2ae4e)
++++ b/.idea/modules.xml	(date 1765449922376)
+@@ -2,6 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
++      <module fileurl="file://$PROJECT_DIR$/ejercicio2/ejercicio2.iml" filepath="$PROJECT_DIR$/ejercicio2/ejercicio2.iml" />
+       <module fileurl="file://$PROJECT_DIR$/tema3.iml" filepath="$PROJECT_DIR$/tema3.iml" />
+     </modules>
+   </component>
+Index: ejercicio2/ejercicio2.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ejercicio2/ejercicio2.iml b/ejercicio2/ejercicio2.iml
+new file mode 100644
+--- /dev/null	(date 1765449922376)
++++ b/ejercicio2/ejercicio2.iml	(date 1765449922376)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
