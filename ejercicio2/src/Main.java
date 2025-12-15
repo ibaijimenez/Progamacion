@@ -1,26 +1,48 @@
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     static Queue<String> nombreProducto = new LinkedList<>();
     static Queue<String> fechaCaducidad = new LinkedList<>();
     public static void productos(){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Nombre del producto: ");
-        String nombre = sc.nextLine();
-        nombreProducto.add(nombre);
-        System.out.print("Fecha del producto: ");
-        String fecha = sc.nextLine();
-        fechaCaducidad.add(fecha);
-
+        boolean w = false;
+        do {
+            try {
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Nombre del producto: ");
+                String nombre = sc.nextLine();
+                nombreProducto.add(nombre);
+                System.out.print("Fecha del producto(dd/MM/yyyy): ");
+                String fecha = sc.nextLine();
+                LocalDate fechaObjeto = LocalDate.parse(fecha, dtf);
+                fechaCaducidad.add(String.valueOf(fechaObjeto));
+                w = true;
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+        while (!w);
     }
     public static void verLista(){
         Scanner sc = new Scanner(System.in);
         System.out.print("==========LISTA==========\n" + nombreProducto + fechaCaducidad);
+    }
+    public static void introducirFecha(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Introduzca la fecha de hoy: ");
+        String fechahoy = sc.nextLine();
+        LocalDate fechaObjeto = LocalDate.parse(fechahoy, dtf);
+        for (int i = 0; i<fechaCaducidad.size();i++){
+            if (fechaObjeto.isBefore(fechaObjeto)){
+                fechaCaducidad.remove(i);
+                nombreProducto.remove(i);
+            }
+        }
+
     }
 
     public static void main(String[] args) {
@@ -40,6 +62,9 @@ public class Main {
                         break;
                     case 2:
                         verLista();
+                        break;
+                    case 3:
+                        introducirFecha();
                         break;
                 }
             }
