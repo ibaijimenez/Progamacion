@@ -7,7 +7,6 @@
     <list default="true" id="02427ee3-26d6-4023-ae30-d4639729e822" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio2/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/141GA05/Desktop/tema3/ejercicio3/src/Main.java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/141GA05/Desktop/tema3/ejercicio4/src/Main.java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -78,7 +77,9 @@
       <workItem from="1765444252137" duration="1249000" />
       <workItem from="1765449243798" duration="305000" />
       <workItem from="1765538898797" duration="5491000" />
-      <workItem from="1765790427757" duration="1381000" />
+      <workItem from="1765790427757" duration="4016000" />
+      <workItem from="1765798207322" duration="536000" />
+      <workItem from="1765869546520" duration="340000" />
     </task>
     <servers />
   </component>
