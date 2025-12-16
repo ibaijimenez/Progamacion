@@ -36,7 +36,7 @@ public class Main {
         System.out.println("introduce el numero del contacto que desea buscar");
         int numero = sc.nextInt();
         if (agenda.containsKey(numero)) {
-            System.out.println("El contacto ha sido encontrado" + agenda.get(numero));
+            System.out.println("El contacto ha sido encontrado: " + agenda.get(numero));
         }
         else  {
             System.out.println("El contacto no existe");
@@ -63,13 +63,13 @@ public class Main {
         String nombre = sc.nextLine();
         boolean encontrado = false;
         for (Map.Entry<Integer, String> entrada : agenda.entrySet()) {
-            if (entrada.getKey().equals(nombre)) {
-                System.out.println("El contacto ha sido encontrado" + entrada.getValue());
+            if (entrada.getValue().equals(nombre)) {
+                System.out.println("El contacto ha sido encontrado: " + agenda.get(entrada.getKey()));
                 encontrado = true;
                 break;
             }
         }
-        if (!encontrado) {
+        if (encontrado==false) {
             System.out.println("El contacto no existe");
         }
     }
