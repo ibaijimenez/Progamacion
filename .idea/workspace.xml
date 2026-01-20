@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02427ee3-26d6-4023-ae30-d4639729e822" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tema 4 ejercicio2/src/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tema 4 ejercicio2/src/Directivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tema 4 ejercicio2/src/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tema 4 ejercicio2/src/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tema 4 ejercicio2/src/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tema 4 ejercicio2/tema 4 ejercicio2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/praktika3/praktika3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/praktika3/src/Alumnos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/praktika3/src/Autor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/praktika3/src/Libro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -65,7 +63,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/141GA05/Desktop/tema3/tema 4 ejercicio2/src/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/141GA05/Desktop/tema3/praktika3/src/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -98,7 +96,8 @@
       <workItem from="1766055965231" duration="1385000" />
       <workItem from="1766145746887" duration="1556000" />
       <workItem from="1768470051896" duration="5273000" />
-      <workItem from="1768564500310" duration="4109000" />
+      <workItem from="1768564500310" duration="4445000" />
+      <workItem from="1768813827689" duration="5112000" />
     </task>
     <servers />
   </component>
