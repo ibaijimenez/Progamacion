@@ -1,16 +1,16 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Alumnos {
     private String nombre;
     private String dni;
     private String clase;
-    private List<Libro> listaLibros;
+    private List<Libro> listaLibros = new ArrayList<Libro>();
 
-    public Alumnos(String nombre, String dni, String clase, List<Libro> listaLibros) {
+    public Alumnos(String nombre, String dni, String clase) {
         this.nombre = nombre;
         this.dni = dni;
         this.clase = clase;
-        this.listaLibros = listaLibros;
     }
 
     public String getNombre() {

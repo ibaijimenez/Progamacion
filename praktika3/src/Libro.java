@@ -5,6 +5,7 @@ public class Libro {
     private Autor autor;
     private int ejemplaresDispo = 3;
 
+
     public Libro(String titulo, String editorial, int numPaginas, Autor autor) {
         this.titulo = titulo;
         this.editorial = editorial;
