@@ -9,6 +9,9 @@ public class Mascota {
     private Cliente dueño;
 
 
+    public Mascota(Veterinarios veterinario) {
+        this.veterinario = veterinario;
+    }
 
     public String getRaza() {
         return raza;

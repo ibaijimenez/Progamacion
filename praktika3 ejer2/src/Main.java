@@ -31,8 +31,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("\n=== MENÚ PRINCIPAL ===");
         System.out.println("1. Registrar Veterinario");
-        System.out.println("2. añadir Veterinario a tu mascota ");
-        System.out.println("3. Registrar Cliente y Mascota");
+        System.out.println("2. Registrar Cliente y Mascota");
+        System.out.println("3. añadir Veterinario a tu mascota ");
         System.out.println("5. Salir");
         System.out.print("¿Qué quieres hacer?: ");
         int respuesta =  sc.nextInt();
@@ -52,19 +52,20 @@ public class Main {
                     veterinarios.add(v1);
                     System.out.println("Veterinario" + v1.getNombre() + " creado correctamente");
                     break;
-                    case 2:
+                    case 3:
                         System.out.println("Ingresa el nombre del veterinario que quieres asignar a la mascota");
                         String nombreVM = sc.nextLine();
                         for(int i = 0; i < veterinarios.size(); i++) {
                             if(veterinarios.get(i).getNombre().equals(nombreVM)) {
+                                Veterinarios vet =  veterinarios.get(i);
                                 System.out.println("tu mascota es perro?");
                                 String mascotaVM = sc.nextLine();
-                                if (mascotaVM == "si") {
+                                if (mascotaVM.equals ("si")) {
                                     for (int p = 0;p < perros.size();p++) {
                                         System.out.println("Como se llama?");
                                         String perroVM = sc.nextLine();
-                                        if (perros.get(i).getNombre().equals(perroVM)) {
-                                            Veterinarios
+                                        if (perros.get(p).getNombre().equals(perroVM)) {
+                                            Mascota  mv = new Mascota(vet);
                                         }
                                     }
                                 }
@@ -72,7 +73,7 @@ public class Main {
                         }
 
                         break;
-                        case 3:
+                        case 2:
                             System.out.println("Ingresa el nombre del cliente");
                             String nombreC = sc.nextLine();
                             System.out.println("Ingresa la direccion del cliente");
@@ -93,7 +94,7 @@ public class Main {
                             String longitudMC = sc.nextLine();
                             System.out.println("tu mascota es un perro?");
                             String perroMC = sc.nextLine();
-                            if (perroMC == "si") {
+                            if (perroMC.equals("si")) {
                                 Perro p1 = new Perro(razaMC,nombreMC,fechaMC,sexoMC,pesoMC,longitudMC);
                                 perros.add(p1);
                                 Cliente c1 = new Cliente(nombreC,direccionC,telefonoC,p1);
